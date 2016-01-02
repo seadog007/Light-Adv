@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <title>Light it!</title>
+  </head>
+  <body>
+    <div style="padding-left: 95px; padding-top: 230px">
+      <input type="checkbox" id="fs">
+      <label for="fs">Fetch data of switches from a Minecraft server: srv.seadog007.me:25565</label>
+    </div>
+    <div style="padding-left: 95px">
+      <input type="checkbox" id="rpi" disabled="">
+      <label for="rpi"><del>Send the light singal to Raspberry Pi</del></label>
+    </div>
+    <div class="wrap" id="bulb">
+      <div id="lamp"></div>
+    </div>
+    <div class="wrap" id="toggle-wrap1">
+      <input type="checkbox" id="toggle1" name="toggle1" class="toggle-cb">
+      <label class="toggle" for="toggle1"></label>
+    </div>
+    <div class="wrap flipx" id="toggle-wrap2">
+      <input type="checkbox" id="toggle2" name="toggle2" class="toggle-cb">
+      <label class="toggle" for="toggle2"></label>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

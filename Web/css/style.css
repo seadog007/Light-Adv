@@ -1,0 +1,61 @@
+.toggle-cb {
+  display: none;
+}
+
+.toggle{
+  display: block;
+  width: 150px;
+  height: 150px;
+  background: url("../img/lever_off.gif");
+  cursor: pointer;
+}
+
+#lamp{
+  display: block;
+  width: 150px;
+  height: 150px;
+  background: url("../img/lamp_off.gif");
+}
+
+#toggle1:checked ~ .toggle {
+  background: url("../img/lever_on.gif");
+}
+#toggle2:checked ~ .toggle {
+  background: url("../img/lever_on.gif");
+}
+
+.wrap {
+  position: absolute;
+  left: 0px;
+  top: 0px
+}
+
+#toggle-wrap1 {
+  top: 50px;
+  left: 50px;
+
+}
+#toggle-wrap2 {
+  top: 50px;
+  left: 500px;
+
+}
+#bulb {
+  top: 50px;
+  left: 280px;
+
+}
+
+#bulb.active > #lamp{
+  background: url("../img/lamp_on.gif");
+}
+
+.flipx {
+    -moz-transform:scaleX(-1);
+    -webkit-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    transform:scaleX(-1);
+    /*IE*/
+    filter:FlipH;
+}
+
